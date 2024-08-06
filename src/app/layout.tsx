@@ -14,6 +14,10 @@ export const metadata: Metadata = {
       url: "https://xooniverse.com"
     }
   ],
+  robots: {
+    index: true,
+    follow: true,
+  }
 };
 
 export default function RootLayout({
