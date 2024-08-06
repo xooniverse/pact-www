@@ -1,45 +1,43 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
-import Image from 'next/image';
+import Head from "next/head";
+import Image from "next/image";
+import { FaGooglePlay, FaApple } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-gray-900 to-gray-700 text-white">
       <Head>
-        <title>My App</title>
+        <title>Pact - Make Informed Decisions</title>
         <meta name="description" content="Pact helps to make impactful decisions out of group discussions." />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="#">Pact</a>
-        </h1>
-
-        <p className={styles.description}>
-          Pact helps to make impactful decisions out of group discussions. Easy discussion. Makes team work easy. Discussions are shown as threads, so better organization for your ideas.
-        </p>
-
-        <div className={styles.grid}>
-          <a href="#" className={styles.card}>
-            <h3>Get Started &rarr;</h3>
-            <p>Click here to join the conversation!</p>
+      <main className="flex flex-col items-center justify-center w-full flex-1 px-4 md:px-20 text-center">
+        <div className="relative mb-6">
+          <div className="absolute inset-0 bg-gradient-to-br from-blue-600 to-purple-600 rounded-full blur-lg opacity-75"></div>
+          <Image src="/icon.png" alt="Pact Logo" width={150} height={150} className="relative z-10" />
+        </div>
+        <h1 className="text-4xl md:text-5xl font-bold mt-6">Pact</h1>
+        <p className="mt-3 text-xl md:text-2xl">Make Informed Decisions</p>
+        <p className="mt-3 text-lg max-w-xl">Pact helps to make impactful decisions out of group discussions. Easy discussion and teamwork made simple. Discussions are shown as threads, providing better organization for your ideas.</p>
+        <div className="mt-10 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
+          <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
+            <button className="flex items-center bg-white text-blue-600 px-6 py-3 rounded-lg shadow-lg hover:bg-gray-200">
+              <FaGooglePlay className="mr-2" />
+              Get it on Play Store
+            </button>
+          </a>
+          <a href="https://www.apple.com/app-store/" target="_blank" rel="noopener noreferrer">
+            <button className="flex items-center bg-white text-blue-600 px-6 py-3 rounded-lg shadow-lg hover:bg-gray-200">
+              <FaApple className="mr-2" />
+              Get it on App Store
+            </button>
           </a>
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
+      <footer className="w-full h-24 flex items-center justify-center border-t border-gray-600">
+        <p className="text-center text-sm text-gray-400">© {new Date().getFullYear()} Pact. All rights reserved.</p>
       </footer>
     </div>
-  )
+  );
 }
