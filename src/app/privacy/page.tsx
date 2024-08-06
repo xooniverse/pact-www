@@ -1,5 +1,5 @@
 import Head from "next/head";
-import "../app/globals.css";
+import '../globals.css'
 
 export default function Privacy() {
   return (
