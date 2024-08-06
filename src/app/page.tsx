@@ -18,7 +18,7 @@ export default function Home() {
         </div>
         <h1 className="text-4xl md:text-5xl font-bold mt-6">Pact</h1>
         <p className="mt-3 text-xl md:text-2xl">Make Informed Decisions</p>
-        <p className="mt-3 text-lg max-w-xl">Pact helps to make impactful decisions out of group discussions. Easy discussion and teamwork made simple. Discussions are shown as threads, providing better organization for your ideas.</p>
+        <p className="mt-3 text-lg max-w-xl">Pact simplifies teamwork by turning chaotic discussions into organized, actionable plans. Our thread-based format helps you focus on what matters and make better decisions together.</p>
         <div className="mt-10 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
           <a href="https://play.google.com/store" target="_blank" rel="noopener noreferrer">
             <button className="flex items-center bg-white text-blue-600 px-6 py-3 rounded-lg shadow-lg hover:bg-gray-200">
