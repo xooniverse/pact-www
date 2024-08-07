@@ -37,4 +37,3 @@ next-env.d.ts
 
 # Firebase Hosting Cache
 .firebase/
-firebase.tsx

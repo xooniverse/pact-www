@@ -3,7 +3,6 @@ import Image from 'next/image';
 import { useState } from 'react';
 import Head from 'next/head';
 import { collection, addDoc } from 'firebase/firestore';
-// This is not included with the code repo (make one yourself with the Firebase Keys)
 import { db } from '../../firebase';
 
 export default function Contact() {
