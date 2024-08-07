@@ -18,7 +18,7 @@ export default function Contact() {
         name,
         email,
         message,
-        timestamp: new Date(),
+        timestamp: (new Date()).valueOf(),
       });
       setSubmitted(true);
       setName('');
