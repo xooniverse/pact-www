@@ -1,8 +1,10 @@
-import { initializeApp } from 'firebase/app';
-import { getFirestore } from 'firebase/firestore';
+import { initializeApp } from "firebase/app";
+import { getFirestore } from "firebase/firestore";
 
-// With Firebase Hosting this works out of the box
-const app = initializeApp();
+// Make sure this file exists
+import { firebaseConfig } from "./keys";
+
+const app = initializeApp(firebaseConfig);
 const db = getFirestore(app);
 
 export { db };
